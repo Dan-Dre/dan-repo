@@ -1,0 +1,197 @@
+.img1 {
+    color: whitesmoke;
+    height: 800px;
+    background-image: url(watertruck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 30px 0px;
+    margin-bottom: 100px;
+    margin-top: 0cm;
+}
+
+a {
+   text-decoration-line: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    color: yellow;
+    display: inline-block;
+    padding: 5px;
+}
+
+nav {
+    background: rgb(14, 14, 66);
+    text-align: right;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.paragraph {
+    text-shadow: 5px 5px 3px 10px;
+    padding: 100px 50px 20px 30px;
+    font-size: 150px;
+}
+
+.text {
+    color: white;
+    font-size: 70px;
+}
+
+.first {
+    font-size: 25px;
+    color: white;
+    margin: 200px 50px;
+    margin-bottom: 150px;
+}
+
+.water1 {
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+body  {
+    color: white;
+    background-color: rgb(14, 14, 66);
+}
+
+.features {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.testimonials{
+    font-size: 20px;
+}
+
+.benefits{
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.benefits2{
+    margin-bottom: 20px;
+}
+
+.provision{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.clean{
+    font-size: 20px;
+    margin-bottom: 150px;
+}
+
+.footer{
+    padding: 100px;
+    font-size: 50px;
+    background-color: black;
+}
+
+@keyframes fadeMe{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.welcome{
+    animation-name: fadeMe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes getBigger{
+    0%{transform: scale(2);}
+    50%{transform: scale(1);}
+    100%{transform: scale(.5);}
+}
+
+.benefits{
+    animation-name: getBigger;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changeColors{
+    0%{background-color: greenyellow;}
+    100%{background-color: green;}
+}
+
+#box1{
+    animation-name: changeColors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: forward;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 50% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color:rgb(14, 14, 66);
+    color: #444;
+  }
+
+  .Box {
+    text-align: center;
+    background-color:white;
+    color:black;
+    border-radius: 5px;
+    padding: 200px 50px;
+    font-size: 200%;
+  }
+
+  .box2 { 
+     text-align: center; 
+    color: black;
+    border-radius: 10px;
+    padding: 10px 50px 0px 10px;  
+    height: 100px;
+    width: 500px;
+    background:greenyellow;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+  .a {
+    grid-column: col / span  1;
+    grid-row: row ;
+    margin-bottom: 200px;
+  }
+
+  .nav-wrapper{
+      background-color: rgba(255, 255, 255, 0.445);
+  }
+
+  .flex{
+      display: flex;
+      justify-content: center;
+  }
+
+  .body2{
+      background-color: cornflowerblue;
+  }
+
+  .flex2{
+      display: flex;
+      justify-content: right;
+  }
+
+
+  
+
+  
