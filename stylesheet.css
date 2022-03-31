@@ -221,8 +221,6 @@ nav {
     }
 
     nav {
-        display: flex;
-        padding: 5px;
         background: rgb(109, 109, 139);
         text-align: right;
     }
