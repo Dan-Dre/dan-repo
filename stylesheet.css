@@ -26,10 +26,11 @@ nav ul{
 
 nav h1{
     font-size: 40px;
-    margin-right: 950px;
+    margin-right: 73%;
 }
 
 nav a{
+    text-decoration: none;
     color: yellow;
 }
 
@@ -197,6 +198,25 @@ nav {
   .flex2{
       display: flex;
       justify-content: right;
+  }
+
+  @media (max-width: 550px){
+      .paragraph{
+      font-size: 100px
+      }
+
+      nav h1{
+        margin-right: 60%;
+    }
+
+    nav {
+        background: rgb(109, 109, 139);
+        text-align: right;
+    }
+
+      .img1{
+          background-image: url(watertruck2.jpg);
+      }
   }
 
 
