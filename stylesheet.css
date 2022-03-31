@@ -221,16 +221,10 @@ nav {
     }
 
     nav {
+        display: flex;
         padding: 5px;
         background: rgb(109, 109, 139);
         text-align: right;
-    }
-
-    body{
-        margin: 0;
-        padding: 0;
-        color: white;
-        background-color: rgb(14, 14, 66);
     }
 
     .img1 {
@@ -272,13 +266,13 @@ nav {
       }
   }
 
-  @media (orientation: landscape){
+  /* @media (orientation: landscape){
       body{
           padding: 0;
           margin: 0;
           background-color: black;
       }
-  }
+  } */
 
 
   
