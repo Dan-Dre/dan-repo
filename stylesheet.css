@@ -159,7 +159,7 @@ nav {
     color:black;
     width: 10%;
     border-radius: 5px;
-    padding: 200px ;
+    padding: 100px 90px;
     font-size: 200%;
     margin: 10px;
   }
@@ -211,9 +211,13 @@ nav {
 
     nav li {
         background-color: rgba(255, 255, 255, 0.514);
-        flex-direction: column;
         padding: 5px;
         border: 1px solid gray;
+    }
+
+    nav ul{
+        list-style: none;
+        flex-direction: column;
     }
 
     nav {
