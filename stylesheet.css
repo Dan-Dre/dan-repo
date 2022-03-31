@@ -49,9 +49,8 @@ nav {
 
 .welcome {
     text-align: center;
-    margin:100px;
-    font-size: 30px;
-    padding: 10px;
+    margin:100px 50px;
+    font-size: 35px;
 }
 
 .paragraph {
@@ -226,18 +225,19 @@ nav {
     }
     .img1 {
         color: whitesmoke;
-        height: 650px;
-        background-image: url(watertruck.jpg);
+        height: 670px;
+        background-image: url(watertruck2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 10px;
         width: 100%;
     }
 
+    
     .welcome {
         text-align: center;
-        margin:100px 50px;
-        font-size: 35px;
+        margin:100px 0px;
+        font-size: 30px;
     }
 
     .text {
