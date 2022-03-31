@@ -221,7 +221,7 @@ nav {
     }
 
     nav {
-        padding: 0px;
+        padding: 5px;
         background: rgb(109, 109, 139);
         text-align: right;
     }
@@ -263,6 +263,12 @@ nav {
 
       .img1{
           background-image: url(watertruck2.jpg);
+      }
+  }
+
+  @media (orientation: landscape){
+      body{
+          background-color: black;
       }
   }
 
