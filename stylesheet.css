@@ -257,6 +257,10 @@ nav {
         font-size: 40px;
     }
 
+    .box2 a{
+        text-decoration: none;
+    }
+
       .img1{
           background-image: url(watertruck2.jpg);
       }
