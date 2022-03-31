@@ -42,7 +42,6 @@ nav li {
 nav {
     display: flex;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.514);
     text-align: right;
     
 }
@@ -216,7 +215,7 @@ nav {
     }
 
     nav {
-        background: rgb(109, 109, 139);
+        text-align: right;
     }
 
     .img1 {
