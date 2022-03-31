@@ -226,6 +226,12 @@ nav {
         text-align: right;
     }
 
+    body{
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: rgb(14, 14, 66);
+    }
 
     .img1 {
         color: whitesmoke;
@@ -268,6 +274,8 @@ nav {
 
   @media (orientation: landscape){
       body{
+          padding: 0;
+          margin: 0;
           background-color: black;
       }
   }
