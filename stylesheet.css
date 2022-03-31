@@ -223,9 +223,10 @@ nav {
         background: rgb(109, 109, 139);
         text-align: right;
     }
+
     .img1 {
         color: whitesmoke;
-        height: 670px;
+        height: 700px;
         background-image: url(watertruck2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -237,7 +238,8 @@ nav {
     .welcome {
         text-align: center;
         margin:100px 0px;
-        font-size: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
     }
 
     .text {
