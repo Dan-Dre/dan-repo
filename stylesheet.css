@@ -204,20 +204,15 @@ nav {
       font-size: 100px
       }
 
+      nav h1{
+        font-size: 40px;
+        margin-right: 60%;
+    }
+
     nav li {
         background-color: rgba(255, 255, 255, 0.514);
         padding: 5px;
         border: 1px solid gray;
-    }
-
-    nav ul{
-        margin-top: 50px;
-        list-style: none;
-    }
-
-    nav h1{
-        font-size: 40px;
-        margin-right: 1%;
     }
 
     nav {
