@@ -41,7 +41,7 @@ nav li {
 
 nav {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.514);
     text-align: right;
     
@@ -205,13 +205,14 @@ nav {
       }
 
       nav h1{
-        margin-right: 60%;
+        margin-right: 125px;
     }
 
     nav li {
         background-color: rgba(255, 255, 255, 0.514);
         padding: 5px;
         border: 1px solid gray;
+        flex-direction: column;
     }
 
     nav ul{
@@ -220,13 +221,15 @@ nav {
     }
 
     nav {
+        padding: 0px;
         background: rgb(109, 109, 139);
         text-align: right;
     }
 
+
     .img1 {
         color: whitesmoke;
-        height: 700px;
+        height: 720px;
         background-image: url(watertruck2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -234,10 +237,17 @@ nav {
         width: 100%;
     }
 
+    .first {
+        font-size: 25px;
+        color: white;
+        margin: 100px 50px;
+        margin-bottom: 150px;
+    }
+
     
     .welcome {
         text-align: center;
-        margin:100px 0px;
+        margin:50px 0px;
         padding: 10px 20px;
         font-size: 20px;
     }
