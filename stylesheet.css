@@ -209,9 +209,36 @@ nav {
         margin-right: 60%;
     }
 
+    nav li {
+        background-color: rgba(255, 255, 255, 0.514);
+        flex-direction: column;
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
     nav {
         background: rgb(109, 109, 139);
         text-align: right;
+    }
+    .img1 {
+        color: whitesmoke;
+        height: 650px;
+        background-image: url(watertruck.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .welcome {
+        text-align: center;
+        margin:100px 50px;
+        font-size: 35px;
+    }
+
+    .text {
+        color: white;
+        font-size: 40px;
     }
 
       .img1{
