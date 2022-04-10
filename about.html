@@ -10,34 +10,75 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">About Us</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="order.html">Order</a></li>
-              </ul>
-            </div>
-          </nav>
           
-          <div>
-              Quick Water Supply as an online website is a privately owned organisation which is made up of individuals working together to ensure customer satisfaction. Quick Water Supply was created to develop water circulation in the state, communities and areas that lack. We believe in problem solving and human development by providing and supplying where it is scarce. The country is hard and as citizens of Nigeria we pass through sress, unlike every other organisation Quick Water Supply saves us from unneccessary stress by building a website where one can
-              easily order for water supply from our comfort zone.      
-          </div>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <h1>QR Code Reader</h1>
+
+<img id="qr" width="100" style="display: none">
+<output>No details</output>
+
+<h2>Take a photo</h2>
+
+<input type="file" accept="image/*" capture>
+
+<h2>Scan with live streaming</h2>
+
+<input type="button" value="Start Camera" id="btnStartCamera">
+<input type="button" value="Take Snapshot" id="btnTakeSnapshot">
     
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3VBGZG859"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  document.addEventListener("DOMContentLoaded", function(){
+    var fileSelector = document.querySelector("input[type=file]");
+    var qr = document.querySelector("#qr");
 
-  gtag('config', 'G-D3VBGZG859');
+    fileSelector.addEventListener("change", function(){
+        var reader = new FileReader();
+
+        reader.addEventListener("load", function(e){
+            qrcode.decode(e.target.result);
+            qr.style.display = "block"
+            qr.src = e.target.result;
+        });
+        reader.readAsDataURL(fileSelector.files[0]);
+    });
+
+    var btnStartCamera = document.querySelector("#btnStartCamera");
+    var btnTakeSnapshot = document.querySelector("#btnTakeSnapshot")
+    btnStartCamera.addEventListener("click", startCamera);
+    btnTakeSnapshot.addEventListener("click", getSnapshot);
+});
+
+qrcode.callback = function(data){
+    var output = document.querySelector(output);
+    output.innerHTML = "QR code data" + data
+}
+
+function startCamera(){
+    if(navigator.getUserMedia != undefined){
+        navigator.getUserMedia({video:true, audio:true}, function(localMediaStream){
+            var video = document.querySelector("video");
+            video.src = window.URL.createObjectURL(localMediaStream);
+            video.play();
+        }, function(){
+            alert("Error opening the camera");
+        });
+    }else{
+        alert("You don't have camera access");
+    }
+}
+
+function getSnapshot(){
+    var video = document.querySelector("video");
+
+    var canvas = document.createElement("canvas");
+    canvas.width = 640;
+    canvas.height = 480;
+    var ctx = canvas.getContext("2d");
+
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    qrcode.decode(canvas.toDataURL('image/jpeg'));
+}
 </script>
 </body>
 </html>
