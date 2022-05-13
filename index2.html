@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sure Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sript.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+    // Import the functions you need from the SDKs you need
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+    // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const config = {
+    apiKey: "AIzaSyDTfKIpRamimbb5_chUWXC53foQnHW41vU",
+    authDomain: "sure-connect-78a4b.firebaseapp.com",
+    projectId: "sure-connect-78a4b",
+    storageBucket: "sure-connect-78a4b.appspot.com",
+    messagingSenderId: "372385285832",
+    appId: "1:372385285832:web:00fb477ba0644c320a07fd",
+    measurementId: "G-PE87ZTZ0PG"
+    };
+  
+    // Initialize Firebase
+    // const app = initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
+    firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+    <nav>
+        <h1>Sure Connect</h1>
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href=""><li>ABOUT</li></a>
+            <a href=""><li>CONTACT</li></a>
+            <a href="login.html" id="lnkLogIn"><li>LOGIN</li></a>
+            <a href="https://wa.me/08106407620?text=Pls%20i%20want%20to%20register%20for%20Sure%20Connect"><li>REGISTER</li></a>
+        </ul>
+    </nav>
+
+    <main>
+
+        <header>
+            <h1 id="h1">Write With Confidence</h1>
+            <p id="message" ></p>
+            <p>Sure connect provides you with neccessary
+               support inorder for you to excel in your waec examinations
+            </p>
+            <a href="https://wa.me/08106407620?text=Pls%20i%20want%20to%20register%20for%20Sure%20Connect"><h3>Join US</h3></a>
+        </header>
+
+    </main>
+</body>
+</html>

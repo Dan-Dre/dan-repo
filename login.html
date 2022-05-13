@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+    // Import the functions you need from the SDKs you need
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+    // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const config = {
+    apiKey: "AIzaSyDTfKIpRamimbb5_chUWXC53foQnHW41vU",
+    authDomain: "sure-connect-78a4b.firebaseapp.com",
+    projectId: "sure-connect-78a4b",
+    storageBucket: "sure-connect-78a4b.appspot.com",
+    messagingSenderId: "372385285832",
+    appId: "1:372385285832:web:00fb477ba0644c320a07fd",
+    measurementId: "G-PE87ZTZ0PG"
+    };
+  
+    // Initialize Firebase
+    // const app = initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
+    firebase.initializeApp(config);
+  </script>
+  <script src="upup.min.js"></script>
+  <script>
+    //Upup
+    UpUP.start({
+      'content-url': '/',
+      'assets': ['runs3.avif', 'runx2.jpeg', 'styles.css', 'runs.jpg', 'index.html', 'login.html', 'script2.js', 'upup.min.js', 'https://www.gstatic.com/firebasejs/3.7.5/firebase.js']
+    })
+  </script>
+</head>
+<body>
+    <nav>
+        <h1>Sure Connect</h1>
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href=""><li>ABOUT</li></a>
+            <a href=""><li>CONTACT</li></a>
+            <a href="login.html" id="lnkLogIn"><li>LOGIN</li></a>
+            <a href="https://wa.me/08106407620?text=Pls%20i%20want%20to%20register%20for%20Sure%20Connect"><li>REGISTER</li></a>
+        </ul>
+    </nav>
+
+    <div id="loggedIn">
+    <section>
+        <article >
+            <h2>WELCOME, <span></span></h2>
+        <ul>
+            <a id="submit" href="#"><li>Subject</li></a>
+            <a href="#"><li>Calculator</li></a>
+            <a href="#" id="lnkLogOut"><li>LogOut</li></a>
+        </ul>
+        </article>
+        </section>
+        <main>
+            <section>
+                <div>
+                    <h1 style="font-size: 40px;">Past Runs</h1>
+                    <p><img src="runs.jpg" alt="img" width="100%"></p>
+                    <p>
+                        Every day we upload contents containing answers to every
+                        questions of every subject to help you write your exams stressfree.
+                        In search for answers to your current day exam, all you need to do is to click 
+                        the "subject" icon above then choose the subject you wish to access.
+                    </p>
+                    <p><img src="runx2.jpeg" alt="img" width="100%"></p>
+                    <hr>
+                    <p><blockquote>"Everyone is known for something"</blockquote></p>
+                    <p><img src="runs3.avif" alt="img" width="100%"></p>
+                    <hr>
+                    <p><blockquote>"Until they talk about you, you are nobody"</blockquote></p>
+                </div>
+            </section>
+            </main>
+            </div>
+
+    <div id="sectionMain">
+    <section id="login" class="loggedOut">
+    <form>
+        <p>
+        <label for="name">Email:</label>
+        <input type="email" id="emailLogin">
+        </p>
+
+        <p>
+        <label for="name">Password:</label>
+        <input type="password" id="passLogin">
+        </p>
+        
+    </form>
+    <p><button id="btnLogIn" style="padding: 5px; width: 150px;">Log In</button></p>
+    <a href="" style="list-style: none; text-decoration: none;"><li style="border: 2px solid black;">REGISTER</li></a>
+    </section>
+</div>
+
+</body>
+</html>
